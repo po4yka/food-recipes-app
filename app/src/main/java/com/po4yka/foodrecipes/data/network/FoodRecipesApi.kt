@@ -1,4 +1,4 @@
-package com.po4yka.foodrecipes
+package com.po4yka.foodrecipes.data.network
 
 import com.po4yka.foodrecipes.models.FoodRecipe
 import retrofit2.Response
