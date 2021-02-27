@@ -8,8 +8,10 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.po4yka.foodrecipes.R
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.activity_main.*
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     private lateinit var navController: NavController
@@ -20,11 +22,11 @@ class MainActivity : AppCompatActivity() {
 
         navController = findNavController(R.id.navHostFragment)
         val appBarConfiguration = AppBarConfiguration(
-                setOf(
-                        R.id.recipesFragment,
-                        R.id.favouriteRecipesFragment,
-                        R.id.foodJokeFragment
-                )
+            setOf(
+                R.id.recipesFragment,
+                R.id.favouriteRecipesFragment,
+                R.id.foodJokeFragment
+            )
         )
 
         bottomNavigationView.setupWithNavController(navController)

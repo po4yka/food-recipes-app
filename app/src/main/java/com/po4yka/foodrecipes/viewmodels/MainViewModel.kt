@@ -1,4 +1,4 @@
-package com.po4yka.foodrecipes
+package com.po4yka.foodrecipes.viewmodels
 
 import android.app.Application
 import android.content.Context
