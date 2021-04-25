@@ -1,7 +1,6 @@
 package com.po4yka.foodrecipes.viewmodels
 
 import android.app.Application
-import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.po4yka.foodrecipes.data.DataStoreRepository
@@ -15,11 +14,14 @@ import com.po4yka.foodrecipes.util.Constants.Companion.QUERY_DIET
 import com.po4yka.foodrecipes.util.Constants.Companion.QUERY_FILL_INGREDIENTS
 import com.po4yka.foodrecipes.util.Constants.Companion.QUERY_NUMBER
 import com.po4yka.foodrecipes.util.Constants.Companion.QUERY_TYPE
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-class RecipesViewModel @ViewModelInject constructor(
+@HiltViewModel
+class RecipesViewModel @Inject constructor(
     application: Application,
     private val dataStoreRepository: DataStoreRepository
 ) : AndroidViewModel(application) {

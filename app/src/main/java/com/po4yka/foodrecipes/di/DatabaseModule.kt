@@ -7,15 +7,13 @@ import com.po4yka.foodrecipes.util.Constants.Companion.DATABASE_NAME
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
-import dagger.hilt.android.components.ApplicationComponent
 import dagger.hilt.android.qualifiers.ApplicationContext
-import javax.inject.Singleton
+import dagger.hilt.components.SingletonComponent
 
 @Module
-@InstallIn(ApplicationComponent::class)
+@InstallIn(SingletonComponent::class)
 object DatabaseModule {
 
-    @Singleton
     @Provides
     fun provideDatabase(
         @ApplicationContext context: Context
@@ -25,7 +23,6 @@ object DatabaseModule {
         DATABASE_NAME
     ).build()
 
-    @Singleton
     @Provides
     fun provideDao(database: RecipesDatabase) = database.recipesDao()
 
