@@ -5,19 +5,18 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.asLiveData
+import androidx.navigation.fragment.findNavController
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.google.android.material.chip.Chip
+import com.google.android.material.chip.ChipGroup
 import com.po4yka.foodrecipes.R
 import com.po4yka.foodrecipes.util.Constants.Companion.DEFAULT_DIET_TYPE
 import com.po4yka.foodrecipes.util.Constants.Companion.DEFAULT_MEAL_TYPE
 import com.po4yka.foodrecipes.viewmodels.RecipesViewModel
 import kotlinx.android.synthetic.main.recipes_bottom_sheet.view.*
 import java.util.*
-import androidx.navigation.fragment.findNavController
-import com.google.android.material.chip.ChipGroup
 
 class RecipesBottomSheet : BottomSheetDialogFragment() {
 
@@ -81,11 +80,6 @@ class RecipesBottomSheet : BottomSheetDialogFragment() {
             try {
                 chipGroup.findViewById<Chip>(chipId).isChecked = true
             } catch (e: Exception) {
-                Toast.makeText(
-                    context,
-                    "RecipesBottomSheet: " + e.message.toString(),
-                    Toast.LENGTH_SHORT
-                ).show()
                 Log.d("RecipesBottomSheet", e.message.toString())
             }
         }

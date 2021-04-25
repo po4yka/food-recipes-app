@@ -19,10 +19,10 @@
             app:argType="boolean" />
     </fragment>
     <fragment
-        android:id="@+id/favouriteRecipesFragment"
-        android:name="com.po4yka.foodrecipes.ui.fragments.favorites.FavouriteRecipesFragment"
-        android:label="Favourites"
-        tools:layout="@layout/fragment_favourite_recipes" />
+        android:id="@+id/favoriteRecipesFragment"
+        android:name="com.po4yka.foodrecipes.ui.fragments.favorites.FavoriteRecipesFragment"
+        android:label="Favorites"
+        tools:layout="@layout/fragment_favorite_recipes" />
     <fragment
         android:id="@+id/foodJokeFragment"
         android:name="com.po4yka.foodrecipes.ui.fragments.foodjoke.FoodJokeFragment"

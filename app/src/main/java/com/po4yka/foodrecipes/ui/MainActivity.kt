@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         val appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.recipesFragment,
-                R.id.favouriteRecipesFragment,
+                R.id.favoriteRecipesFragment,
                 R.id.foodJokeFragment
             )
         )
@@ -38,4 +38,3 @@ class MainActivity : AppCompatActivity() {
         return navController.navigateUp() || super.onSupportNavigateUp()
     }
 }
-
