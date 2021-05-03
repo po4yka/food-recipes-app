@@ -48,4 +48,6 @@
     <string name="cheap_checkmark">Cheap Checkmark</string>
     <string name="vegetarian_checkmark">Vegetarian Checkmark</string>
     <string name="is_recipe_vegan">Is recipe vegan</string>
+    <string name="grams">Grams</string>
+    <string name="ingredient_image">Ingredient Image</string>
 </resources>

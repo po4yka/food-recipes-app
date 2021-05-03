@@ -10,9 +10,10 @@ import com.google.android.material.tabs.TabLayoutMediator
 import com.po4yka.foodrecipes.R
 import com.po4yka.foodrecipes.adapters.PagerAdapter
 import com.po4yka.foodrecipes.databinding.ActivityDetailsBinding
-import com.po4yka.foodrecipes.ui.fragments.overview.IngredientsFragment
+import com.po4yka.foodrecipes.ui.fragments.ingredients.IngredientsFragment
 import com.po4yka.foodrecipes.ui.fragments.overview.InstructionsFragment
 import com.po4yka.foodrecipes.ui.fragments.overview.OverviewFragment
+import com.po4yka.foodrecipes.util.Constants.Companion.RECIPE_RESULT_KEY
 import kotlinx.android.synthetic.main.activity_details.*
 
 class DetailsActivity : AppCompatActivity() {
@@ -41,7 +42,7 @@ class DetailsActivity : AppCompatActivity() {
         titles.add("Instructions")
 
         val resultBundle = Bundle()
-        resultBundle.putParcelable("recipeBundle", args.result)
+        resultBundle.putParcelable(RECIPE_RESULT_KEY, args.result)
 
         val pagerAdapter = PagerAdapter(
             resultBundle,
