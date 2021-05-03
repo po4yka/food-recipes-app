@@ -50,4 +50,5 @@
     <string name="is_recipe_vegan">Is recipe vegan</string>
     <string name="grams">Grams</string>
     <string name="ingredient_image">Ingredient Image</string>
+    <string name="save_to_favorites">Save to Favorites</string>
 </resources>
