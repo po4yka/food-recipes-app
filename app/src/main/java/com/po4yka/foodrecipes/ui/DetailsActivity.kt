@@ -11,7 +11,7 @@ import com.po4yka.foodrecipes.R
 import com.po4yka.foodrecipes.adapters.PagerAdapter
 import com.po4yka.foodrecipes.databinding.ActivityDetailsBinding
 import com.po4yka.foodrecipes.ui.fragments.ingredients.IngredientsFragment
-import com.po4yka.foodrecipes.ui.fragments.overview.InstructionsFragment
+import com.po4yka.foodrecipes.ui.fragments.instructions.InstructionsFragment
 import com.po4yka.foodrecipes.ui.fragments.overview.OverviewFragment
 import com.po4yka.foodrecipes.util.Constants.Companion.RECIPE_RESULT_KEY
 import kotlinx.android.synthetic.main.activity_details.*
