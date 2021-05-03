@@ -55,4 +55,6 @@
     <string name="favorite_recipes_book">Favorite Recipes Book</string>
     <string name="set_recipes_parameters">Set Recipes Parameters</string>
     <string name="no_recipes_image">No Recipes Image</string>
+    <string name="delete_all">Delete All</string>
+    <string name="delete_favorite_menu">Delete Favorite Menu</string>
 </resources>
