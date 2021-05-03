@@ -38,5 +38,14 @@
     <string name="healthy">Healthy</string>
     <string name="dairy_free">Dairy Free</string>
     <string name="no_internet_connection">No Internet Connection.</string>
-    <string name="search">Search</string>
+    <string name="recipe_image">Recipe Image</string>
+    <string name="time_for_cooking">Time for cooking</string>
+    <string name="likes_count">Likes Count</string>
+    <string name="vegan_checkmark">Vegan Checkmark</string>
+    <string name="gluten_free_checkmark">Gluten Free Checkmark</string>
+    <string name="dairy_free_checkmark">Dairy Free Checkmark</string>
+    <string name="healthy_checkmark">Healthy Checkmark</string>
+    <string name="cheap_checkmark">Cheap Checkmark</string>
+    <string name="vegetarian_checkmark">Vegetarian Checkmark</string>
+    <string name="is_recipe_vegan">Is recipe vegan</string>
 </resources>
