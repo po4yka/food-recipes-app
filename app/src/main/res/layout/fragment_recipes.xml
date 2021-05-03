@@ -41,6 +41,7 @@
             android:src="@drawable/ic_restaurant"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            android:contentDescription="@string/set_recipes_parameters"
             app:tint="@color/white" />
 
         <ImageView
@@ -56,6 +57,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/recyclerview"
+            android:contentDescription="@string/no_recipes_image"
             app:layout_constraintVertical_bias="0.37" />
 
         <TextView

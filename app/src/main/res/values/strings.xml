@@ -51,4 +51,8 @@
     <string name="grams">Grams</string>
     <string name="ingredient_image">Ingredient Image</string>
     <string name="save_to_favorites">Save to Favorites</string>
+    <string name="no_favorite_recipes">No Favorite Recipes.</string>
+    <string name="favorite_recipes_book">Favorite Recipes Book</string>
+    <string name="set_recipes_parameters">Set Recipes Parameters</string>
+    <string name="no_recipes_image">No Recipes Image</string>
 </resources>
