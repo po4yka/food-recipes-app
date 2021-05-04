@@ -1,6 +1,7 @@
 package com.po4yka.foodrecipes.data
 
 import com.po4yka.foodrecipes.data.network.FoodRecipesApi
+import com.po4yka.foodrecipes.models.FoodJoke
 import com.po4yka.foodrecipes.models.FoodRecipe
 import retrofit2.Response
 import javax.inject.Inject
@@ -15,6 +16,10 @@ class RemoteDataSource @Inject constructor(
 
     suspend fun searchRecipes(searchQuery: Map<String, String>): Response<FoodRecipe> {
         return foodRecipesApi.searchRecipes(searchQuery)
+    }
+
+    suspend fun getFoodJoke(apiKey: String): Response<FoodJoke> {
+        return foodRecipesApi.getFoodJoke(apiKey)
     }
 
 }

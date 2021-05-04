@@ -57,4 +57,9 @@
     <string name="no_recipes_image">No Recipes Image</string>
     <string name="delete_all">Delete All</string>
     <string name="delete_favorite_menu">Delete Favorite Menu</string>
+    <string name="error">Error</string>
+
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </string>
+    <string name="share">Share</string>
+    <string name="no_food_joke_image">No Food Joke Image</string>
 </resources>
