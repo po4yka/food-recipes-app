@@ -21,15 +21,14 @@ import com.po4yka.foodrecipes.ui.fragments.overview.OverviewFragment
 import com.po4yka.foodrecipes.util.Constants.Companion.RECIPE_RESULT_KEY
 import com.po4yka.foodrecipes.viewmodels.MainViewModel
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.android.synthetic.main.activity_details.*
 
 @AndroidEntryPoint
 class DetailsActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityDetailsBinding
-    private val mainViewModel: MainViewModel by viewModels()
 
     private val args by navArgs<DetailsActivityArgs>()
+    private val mainViewModel: MainViewModel by viewModels()
 
     private var recipeSaved = false
     private var savedRecipeId = 0
@@ -41,8 +40,8 @@ class DetailsActivity : AppCompatActivity() {
         binding = ActivityDetailsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setSupportActionBar(toolbar)
-        toolbar.setTitleTextColor(ContextCompat.getColor(this, R.color.white))
+        setSupportActionBar(binding.toolbar)
+        binding.toolbar.setTitleTextColor(ContextCompat.getColor(this, R.color.white))
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         val fragments = ArrayList<Fragment>()
@@ -133,7 +132,7 @@ class DetailsActivity : AppCompatActivity() {
 
     private fun showSnackBar(message: String) {
         Snackbar.make(
-            detailsLayout,
+            binding.detailsLayout,
             message,
             Snackbar.LENGTH_SHORT
         ).setAction("Okay") {}
@@ -148,4 +147,5 @@ class DetailsActivity : AppCompatActivity() {
         super.onDestroy()
         changeMenuItemColor(menuItem, R.color.white)
     }
+
 }

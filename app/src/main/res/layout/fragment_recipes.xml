@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+
         <variable
             name="mainViewModel"
             type="com.po4yka.foodrecipes.viewmodels.MainViewModel" />
@@ -22,12 +23,12 @@
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
             android:orientation="vertical"
-            app:layout_constraintTop_toTopOf="parent"
-            app:shimmer_recycler_item_count="3"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shimmer_recycler_item_count="3"
             app:shimmer_recycler_layout="@layout/placeholder_row_layout" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -37,35 +38,35 @@
             android:layout_marginEnd="24dp"
             android:layout_marginBottom="24dp"
             android:clickable="true"
+            android:contentDescription="@string/set_recipes_parameters"
             android:focusable="true"
             android:src="@drawable/ic_restaurant"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:contentDescription="@string/set_recipes_parameters"
             app:tint="@color/white" />
 
         <ImageView
             android:id="@+id/error_imageView"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
             readApiResponse="@{mainViewModel.recipesResponse}"
             readDatabase="@{mainViewModel.readRecipes}"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:alpha="0.5"
+            android:contentDescription="@string/no_recipes_image"
             android:src="@drawable/ic_sad"
             android:visibility="invisible"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/recyclerview"
-            android:contentDescription="@string/no_recipes_image"
             app:layout_constraintVertical_bias="0.37" />
 
         <TextView
             android:id="@+id/error_textView"
+            readApiResponse="@{mainViewModel.recipesResponse}"
+            readDatabase="@{mainViewModel.readRecipes}"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            readApiResponse2="@{mainViewModel.recipesResponse}"
-            readDatabase2="@{mainViewModel.readRecipes}"
             android:layout_marginTop="8dp"
             android:alpha="0.5"
             android:textSize="18sp"
